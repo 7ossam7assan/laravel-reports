@@ -4,7 +4,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://github.com/Naereen/StrapDown.js/blob/master/strapdown.min.js)
 
-It's a countless times to build reports in your dashboard something like latest users registered, user histories, appointments, etc.. Then export this report table as Excel, Or you need to filter the results or get some results based on search criteria so you don't need to do that so and so everytime. With one file and one command you will generate all these things
+It's a countless times to build reports in your dashboard something like latest users registered, user histories, appointments, etc.. Then export this report table as Excel, Or you need to filter the results or get some results based on search criteria so you don't need to do that so and so everytime. With one file and one command you will generate everything you need
 
 ## Features
 
