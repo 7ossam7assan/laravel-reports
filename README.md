@@ -57,7 +57,7 @@ Laravel >= 5.5 uses Package Auto-Discovery, so doesn't require you to manually a
 
 1. Create file called `reports.json` at the project root
 2. Then, run command `php artisan make:report`
-3. Finally, go to the url http://{APP_URL}/reports/{model-name-in-lowercase}
+3. Finally, go to the url http://_{APP_URL}_/reports/_{model-name-in-lowercase}_
 
 ## Development Stack
 
