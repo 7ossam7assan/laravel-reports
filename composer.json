@@ -1,0 +1,24 @@
+{
+    "name": "mgamal/laravel-reports",
+    "description": "Build/Export report with one command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Gamal",
+            "email": "mg.dev1992@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "MG\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MG\\ReportServiceProvider"
+            ]
+        }
+    }
+}
