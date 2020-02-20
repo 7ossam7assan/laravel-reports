@@ -8,7 +8,7 @@ It's a countless times to build reports in your dashboard something like latest 
 
 ## Features
 
-- Generate Report based on `Model` like `User`, `Post`, `History`, etc.. with specific fields like `id`, `name`, `email`,.. 
+- Generate Report based on _Model_ like `User`, `Post`, `History`, etc.. with specific fields like `id`, `name`, `email`,.. 
 - Export the results as Excel
 - Search by specific fields
 - Sort by specific fields
