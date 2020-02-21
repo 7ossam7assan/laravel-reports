@@ -74,7 +74,7 @@ Laravel >= 5.5 uses Package Auto-Discovery, so doesn't require you to manually a
 
 - ### Pull Requests
 
-  - Fork the Framework repository
+  - Fork the repository
   - Create a new branch for your awesome work
   - Send a pull request
 
