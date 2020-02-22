@@ -1,6 +1,6 @@
 <?php
 
-namespace Barista;
+namespace MG;
 
 use Illuminate\Support\ServiceProvider;
 
