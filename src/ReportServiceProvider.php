@@ -4,7 +4,7 @@ namespace MG;
 
 use Illuminate\Support\ServiceProvider;
 
-class BaristaServiceProvider extends ServiceProvider
+class ReportServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
