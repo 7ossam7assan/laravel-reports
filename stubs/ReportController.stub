@@ -8,8 +8,11 @@ class ReportController extends Controller
 {
     public function DummyMethod()
     {
-        return DummyModel::where(DummyCondition)
+        $dummyReport = DummyModel::select(DummyColumn)
+        ->where(DummyCondition)
         ->orderBy(DummyColumn, OrderType)
         ->get();
+
+        return view(DummyView, compact('dummyReport'));
     }
 }
