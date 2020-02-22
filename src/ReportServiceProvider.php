@@ -3,6 +3,7 @@
 namespace MG;
 
 use Illuminate\Support\ServiceProvider;
+use MG\Commands\MakeReport;
 
 class ReportServiceProvider extends ServiceProvider
 {
@@ -13,6 +14,7 @@ class ReportServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->commands([MakeReport::class]);
     }
 
     /**
