@@ -1,9 +1,11 @@
 <?php
 
-namespace ReportsBuilder\Commands;
+namespace MG\Commands;
 
 use Illuminate\Console\Command;
-use ReportsBuilder\FileParser;
+use Illuminate\Support\Str;
+use MG\FileParser;
+
 
 class MakeReport extends Command
 {
@@ -46,6 +48,10 @@ class MakeReport extends Command
      */
     public function handle()
     {
-
+        $file = $this->argument('file');
+        $extenstion = $this->file_parser->getFileDetails($file)[0];
+        $class = 'MG\\Formatters\\'.Str::studly($extenstion.'Formatter');
+        dd($this->file_parser->parse($file,new $class));
+        dd($file);
     }
 }

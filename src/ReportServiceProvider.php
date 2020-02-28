@@ -1,9 +1,9 @@
 <?php
 
-namespace ReportsBuilder;
+namespace MG;
 
 use Illuminate\Support\ServiceProvider;
-use ReportsBuilder\Commands\MakeReport;
+use MG\Commands\MakeReport;
 
 class ReportServiceProvider extends ServiceProvider
 {

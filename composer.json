@@ -1,5 +1,5 @@
 {
-    "name": "mgamal/laravel-reports-d",
+    "name": "mgamal/laravel-reports",
     "description": "Build/Export report with one command",
     "license": "MIT",
     "authors": [
@@ -11,17 +11,14 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "ReportsBuilder\\": "src/"
+            "MG\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ReportsBuilder\\ReportServiceProvider"
-            ],
-            "aliases": {
-                "ReportBuilder" : "ReportBuilder\\ReportBuilderFacade"
-            }
+                "MG\\ReportServiceProvider"
+            ]
         }
     },
     "require": {

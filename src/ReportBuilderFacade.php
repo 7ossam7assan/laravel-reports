@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ReportsBuilder;
+namespace MG;
 
 
 final class ReportBuilderFacade
