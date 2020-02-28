@@ -27,10 +27,13 @@ class FileParser
     function parse($file, IFileFormatter $fileFormatter)
     {
         list($extenstion, $content) = $this->getFileDetails($file);
+
         // validate file extension
         if (in_array($extenstion,config('report-builder.format')))
         {
+            // Open Closed Principle instead of if conditions
             return $fileFormatter->format($content);
+
         } else{
              throw new ExtensionFileException;
         }
