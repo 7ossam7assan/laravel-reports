@@ -1,8 +1,9 @@
 <?php
 
-namespace MG\Commands;
+namespace ReportsBuilder\Commands;
 
 use Illuminate\Console\Command;
+use ReportsBuilder\FileParser;
 
 class MakeReport extends Command
 {
@@ -11,23 +12,31 @@ class MakeReport extends Command
      *
      * @var string
      */
-    protected $signature = 'make:report {file=reports.json : Reports File}';
+    protected $signature = 'make:report {file=reports.json : Reports JSON File}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Build/Export Laravel Report with one command';
+    protected $description = 'Build/Export Laravel Report with just one command';
+
+
+    /**
+     * @var FileParser
+     */
+
+    private $file_parser;
 
     /**
      * Create a new command instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(FileParser $parser)
     {
         parent::__construct();
+        $this->file_parser = $parser;
     }
 
     /**
@@ -37,6 +46,6 @@ class MakeReport extends Command
      */
     public function handle()
     {
-        
+
     }
 }

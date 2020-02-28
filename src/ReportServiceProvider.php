@@ -1,9 +1,9 @@
 <?php
 
-namespace MG;
+namespace ReportsBuilder;
 
 use Illuminate\Support\ServiceProvider;
-use MG\Commands\MakeReport;
+use ReportsBuilder\Commands\MakeReport;
 
 class ReportServiceProvider extends ServiceProvider
 {
@@ -24,5 +24,9 @@ class ReportServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        $this->publishes([
+            __DIR__ . '/../config/report-builder.php' => config_path('report-builder.php'),
+        ], 'config');
     }
 }
